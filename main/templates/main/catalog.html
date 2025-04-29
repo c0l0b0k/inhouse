@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Каталог: {{ category.name }}{% endblock %}
+
+{% block content %}
+
+
+<div class="container my-4">
+
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'index' %}">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ category.name }}</li>
+    </ol>
+  </nav>
+
+
+  <h2 class="mb-4">{{ category.name }}</h2>
+
+  <!-- Фильтрация и поиск -->
+  <form method="get" id="filter-form">
+
+    <div class="row g-2 align-items-end">
+
+      <!-- Поиск -->
+      <div class="col-md-4">
+        <div class="input-group">
+          <input type="text" class="form-control" name="q" placeholder="Поиск..." value="{{ request.GET.q }}">
+          <button class="btn" type="submit" style="background-color: #D2D2D2;">
+            🔍
+          </button>
+        </div>
+      </div>
+
+      <!-- Сортировка -->
+      <div class="col-md-2">
+        <select name="sort" class="form-select" onchange="document.getElementById('filter-form').submit();">
+          <option value="">Сортировать по</option>
+          <option value="price" {% if request.GET.sort == 'price' %}selected{% endif %}>Цене</option>
+          <option value="name" {% if request.GET.sort == 'name' %}selected{% endif %}>Названию</option>
+        </select>
+      </div>
+
+
+
+      <!-- Бренд -->
+      <div class="col-md-2">
+        <select name="brand" class="form-select" onchange="document.getElementById('filter-form').submit();">
+          <option value="">Бренд</option>
+          {% for brand in brands %}
+            <option value="{{ brand.name }}" {% if request.GET.brand == brand.name %}selected{% endif %}>
+              {{ brand.name }}
+            </option>
+          {% endfor %}
+        </select>
+      </div>
+
+
+ <!-- Кнопка сброса -->
+  <div class="col-md-2 text-end">
+    <button type="reset" class="btn btn-secondary w-100" id="reset-button">Сбросить</button>
+  </div>
+    </div>
+  </form>
+
+</div>
+
+<!-- Список товаров -->
+
+<div class="container">
+  <div class="row">
+    {% for product in products %}
+      <div class="col-md-6 mb-5">
+        <div class="card h-100 shadow-sm border-0" style="background-color: #1F1F1F;">
+          <a href="{% url 'product_detail' product.pk %}">
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}" style="height: 400px; object-fit: cover;">
+          </a>
+          <div class="mt-3" style="padding: 0 15px;">
+            <h5 class="product-text">{{ product.name }}</h5>
+            <p class="product-price">Цена: {{ product.price }} ₽</p>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <div class="col-12">
+        <p class="text-center">Товары не найдены.</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

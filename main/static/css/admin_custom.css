@@ -1,0 +1,22 @@
+/* Скрыть блок "Последние действия" */
+#recent-actions-module{
+    display: none;
+}
+
+
+.custom-admin-panel {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-admin-panel .badge {
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+}
+

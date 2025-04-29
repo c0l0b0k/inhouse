@@ -1,0 +1,72 @@
+[
+  {
+    "model": "main.brand",
+    "pk": 1,
+    "fields": {
+      "name": "HomeStyle"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 2,
+    "fields": {
+      "name": "Scandi"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 3,
+    "fields": {
+      "name": "LeatherPro"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 4,
+    "fields": {
+      "name": "FurnitureCo"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 5,
+    "fields": {
+      "name": "PureComfort"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 6,
+    "fields": {
+      "name": "FreshSleep"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 7,
+    "fields": {
+      "name": "ClassicStyle"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 8,
+    "fields": {
+      "name": "DualComfort"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 9,
+    "fields": {
+      "name": "OrthoPlus"
+    }
+  },
+  {
+    "model": "main.brand",
+    "pk": 10,
+    "fields": {
+      "name": "GreekStyle"
+    }
+  }
+]

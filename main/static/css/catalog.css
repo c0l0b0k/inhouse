@@ -1,0 +1,29 @@
+nav ol.breadcrumb a {
+  text-decoration: none; /* Removes underline */
+  color: white; /* Sets the link color to white */
+}
+nav ol.breadcrumb .breadcrumb-item.active {
+  color: white  ;
+}
+
+.breadcrumb a:hover {
+  color: #cccccc; /* Light gray color on hover */
+}
+
+.breadcrumb{
+  --bs-breadcrumb-divider-color: white !important; /* Override the arrow color */
+}
+
+.product-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    color: white;
+}
+
+.product-price {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: #cccccc;
+}

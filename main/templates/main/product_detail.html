@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+<!-- Детали товара -->
+<div class="container my-5 position-relative">
+  <a href="javascript:history.back()" class="btn btn-secondary position-absolute" style="top: 0; right: 0;">Назад</a>
+
+  <h2>{{ product.name }}</h2>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}">
+    </div>
+    <div class="col-md-6">
+      <p><strong>Цена: </strong>{{ product.price }} ₽</p>
+      <p><strong>Описание: </strong>{{ product.description }}</p>
+      <p><strong>Бренд: </strong>{{ product.brand }}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

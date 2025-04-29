@@ -1,0 +1,56 @@
+[
+  {
+    "model": "main.category",
+    "pk": 1,
+    "fields": {
+      "name": "Диваны",
+      "description": "Комфортные и стильные диваны для вашего интерьера",
+      "image": "categories/sofas.jpg"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 2,
+    "fields": {
+      "name": "Кровати",
+      "description": "Удобные кровати для здорового сна",
+      "image": "categories/sofas.jpg"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 3,
+    "fields": {
+      "name": "Шкафы",
+      "description": "Практичные шкафы для хранения вещей",
+      "image": "categories/sofas.jpg"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 4,
+    "fields": {
+      "name": "Столы",
+      "description": "Элегантные и функциональные столы для дома и офиса",
+      "image": "categories/sofas.jpg"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 5,
+    "fields": {
+      "name": "Стулья",
+      "description": "Удобные стулья для любой комнаты",
+      "image": "categories/sofas.jpg"
+    }
+  },
+  {
+    "model": "main.category",
+    "pk": 6,
+    "fields": {
+      "name": "Матрасы",
+      "description": "Качественные матрасы для комфортного сна",
+      "image": "categories/sofas.jpg"
+    }
+  }
+]

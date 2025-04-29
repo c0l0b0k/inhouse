@@ -1,0 +1,277 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1F1F1F;
+    color: #ffffff;
+}
+body a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Removes underline */
+}
+
+body a:hover {
+  color: #cccccc; /* Light gray color on hover */
+}
+
+
+/* Цвет фона для шапки */
+.navbar {
+  background-color: #1F1F1F; /* Темный цвет для шапки */
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.logo-img {
+  height: 40px; /* Подгонка размера логотипа */
+  width: auto;
+}
+
+.navbar .nav-link {
+  color: white; /* Белый цвет текста для ссылок */
+  font-size: 14px; /* Меньший размер шрифта */
+}
+
+.navbar .nav-link:hover {
+  color: #cccccc; /* Цвет при наведении */
+}
+
+
+
+
+.navbar-toggler-icon:before {
+  top: -8px;
+}
+
+.navbar-toggler-icon:after {
+  bottom: -8px;
+}
+
+
+/* Карусель */
+.carousel-inner {
+  height: 650px; /* или другая высота, которая вам подходит */
+}
+
+.carousel-item img {
+  object-fit: cover; /* сохраняет пропорции и заполняет пространство */
+  height: 100%;
+}
+
+.carousel-caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Полупрозрачное затемнение */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-caption-overlay h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* Стилизация карточек */
+.category-card {
+    height: 350px; /* Высота карточек */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #ddd; /* Граница для карточек */
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+}
+
+.card-body {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+/* Граница для контейнера */
+/* Стилизация карточек */
+.category-card {
+    width: 100%; /* Карточка занимает всю ширину */
+    height: 300px; /* Фиксированная высота */
+    position: relative;
+    overflow: hidden; /* Обрезка изображений, если они выходят за пределы */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Подгонка изображений */
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+}
+
+/* Центрирование текста */
+/*.card-body {*/
+/*    position: absolute;*/
+/*    bottom: 40px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/
+
+.categories-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.categories-container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    border-radius:0px;
+    object-fit: cover;
+    width: 100%;
+    height: 500px; /* Для десктопов */
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 300px; /* Для мобильных устройств */
+    }
+}
+
+
+.card-img-wrapper {
+    position: relative;
+}
+
+/*затемнение*/
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Чуть прозрачное затемнение */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.card-title-overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 35px;
+    transition: transform 0.3s ease; /* плавная анимация */
+}
+.card:hover .card-title-overlay {
+    transform: translate(-50%, -20px); /* чуть-чуть вверх */
+}
+
+
+.card-link {
+    text-decoration: none;
+    display: block;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.card {
+    border-radius: 0; /* Убираем скругления */
+}
+
+.card-more-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    pointer-events: none; /* Чтобы не блокировать клик на карточке */
+    z-index: 3;
+}
+
+.card:hover .card-more-overlay {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* Кнопки */
+/*.btn-primary {*/
+/*    background-color: #0d6efd;*/
+/*    border: none;*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.btn-primary:hover {*/
+/*    background-color: #0b5ed7;*/
+/*}*/
+
+/* Форма обратной связи */
+form input, form textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Футер */
+footer {
+    margin-top: 4rem;
+}
+
+footer h5 {
+    margin-bottom: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.bg-dark.text-white {
+    background-color: #212529 !important;
+}

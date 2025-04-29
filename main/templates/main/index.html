@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+
+<!-- Карусель -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <img src="{% static 'images/banner1.jpg.webp' %}" class="d-block w-100" alt="Banner 1">
+      <div class="carousel-caption-overlay">
+        <h2>Мебель для вашего уюта</h2>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="{% static 'images/banner2.jpg.webp' %}" class="d-block w-100" alt="Banner 2">
+      <div class="carousel-caption-overlay">
+        <h2>Современные решения для дома</h2>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="{% static 'images/banner1.jpg.webp' %}" class="d-block w-100" alt="Banner 3">
+      <div class="carousel-caption-overlay">
+        <h2>Качество и комфорт</h2>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Категории -->
+<div class="container-fluid my-5 px-4">
+  <h2 class="text-center mb-4 text-white">Наши категории</h2>
+  <div class="row g-4">
+    {% for category in categories %}
+      <div class="col-12 col-md-6">
+        <a href="{% url 'catalog' category.id %}" class="card-link">
+          <div class="card h-100 shadow-sm border-0 position-relative overflow-hidden">
+            <div class="card-img-wrapper position-relative">
+              <img src="{% if category.image %}{{ category.image.url }}{% else %}{% static 'images/default_category.jpg' %}{% endif %}"
+                   class="card-img-top" alt="{{ category.name }}">
+              <div class="card-overlay"></div>
+              <h2 class="card-title-overlay">{{ category.name }}</h2>
+            </div>
+                  <div class="card-more-overlay">Подробнее</div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+<!-- Обратная связь -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Связаться с нами</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form id="contactForm">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="name" class="form-label">Ваше имя</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Ваш Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn" style="background-color: #D2D2D2;">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+// Получение CSRF-токена из cookie
+function getCSRFToken() {
+  var cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.substring(0, 10) === 'csrftoken=') {
+        cookieValue = decodeURIComponent(cookie.substring(10));
+        break;
+      }
+    }
+  }
+  return cookieValue;
+}
+
+$(document).ready(function() {
+  $('#contactForm').on('submit', function(event) {
+    event.preventDefault();  // Предотвращаем стандартную отправку формы
+    var formData = {
+      'name': $('#name').val(),
+      'email': $('#email').val(),
+      'message': $('#message').val()
+    };
+
+    $.ajax({
+      type: 'POST',
+      url: '{% url "contact_view" %}',  // Указываем правильный URL
+      data: formData,
+      headers: {
+        'X-CSRFToken': getCSRFToken()  // Добавляем CSRF-токен в заголовки
+      },
+      success: function(response) {
+        alert('Сообщение отправлено!');
+      },
+      error: function() {
+        alert('Ошибка при отправке сообщения.');
+      }
+    });
+  });
+});
+</script>
+
+{% endblock %}

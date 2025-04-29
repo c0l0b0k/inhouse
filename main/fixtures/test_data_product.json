@@ -1,0 +1,912 @@
+[
+  {
+    "model": "main.product",
+    "pk": 1,
+    "fields": {
+      "name": "Диван Лондон",
+      "description": "Стильный диван для современной гостиной.",
+      "price": "35000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 2,
+    "fields": {
+      "name": "Диван Милан",
+      "description": "Элегантный диван в итальянском стиле.",
+      "price": "42000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 3,
+    "fields": {
+      "name": "Диван Берлин",
+      "description": "Минималистичный диван для малых помещений.",
+      "price": "28000.00",
+      "brand": 1,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 4,
+    "fields": {
+      "name": "Диван Осло",
+      "description": "Уютный диван в скандинавском стиле.",
+      "price": "37000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 5,
+    "fields": {
+      "name": "Диван Париж",
+      "description": "Роскошный диван для стильной квартиры.",
+      "price": "50000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 6,
+    "fields": {
+      "name": "Диван Токио",
+      "description": "Функциональный диван для современного офиса.",
+      "price": "32000.00",
+      "brand": null,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 7,
+    "fields": {
+      "name": "Диван Нью-Йорк",
+      "description": "Модульный диван для городской квартиры.",
+      "price": "58000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 8,
+    "fields": {
+      "name": "Диван Мадрид",
+      "description": "Эргономичный диван с нишей для хранения.",
+      "price": "40000.00",
+      "brand": 1,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 9,
+    "fields": {
+      "name": "Диван Рим",
+      "description": "Ретро-дизайн и современные материалы.",
+      "price": "45000.00",
+      "brand": 2,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 10,
+    "fields": {
+      "name": "Диван Амстердам",
+      "description": "Мягкий диван с просторным спальным местом.",
+      "price": "52000.00",
+      "brand": null,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 11,
+    "fields": {
+      "name": "Диван Сидней",
+      "description": "Удобный диван в стиле минимализма.",
+      "price": "33000.00",
+      "brand": 3,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 12,
+    "fields": {
+      "name": "Диван Чикаго",
+      "description": "Прочный диван с кожаной отделкой.",
+      "price": "61000.00",
+      "brand": null,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 13,
+    "fields": {
+      "name": "Диван Вена",
+      "description": "Элегантный диван для классического интерьера.",
+      "price": "47000.00",
+      "brand": 3,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 14,
+    "fields": {
+      "name": "Диван Прага",
+      "description": "Компактный диван для небольших квартир.",
+      "price": "29500.00",
+      "brand": 3,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 15,
+    "fields": {
+      "name": "Диван Афины",
+      "description": "Изысканный диван с мягкой обивкой.",
+      "price": "53000.00",
+      "brand": 3,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 16,
+    "fields": {
+      "name": "Диван Барселона",
+      "description": "Диван в стиле модерн для больших помещений.",
+      "price": "48000.00",
+      "brand": null,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 17,
+    "fields": {
+      "name": "Диван Брюссель",
+      "description": "Эко-диван из переработанных материалов.",
+      "price": "37000.00",
+      "brand": 4,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 18,
+    "fields": {
+      "name": "Диван Копенгаген",
+      "description": "Функциональный диван-трансформер.",
+      "price": "60000.00",
+      "brand": null,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 19,
+    "fields": {
+      "name": "Диван Хельсинки",
+      "description": "Диван с деревянными элементами декора.",
+      "price": "39000.00",
+      "brand": 3,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 20,
+    "fields": {
+      "name": "Диван Лиссабон",
+      "description": "Диван с ортопедическим матрасом.",
+      "price": "55000.00",
+      "brand": 4,
+      
+      "category": 1,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 21,
+    "fields": {
+      "name": "Кровать Оливия",
+      "description": "Комфортная кровать с мягким изголовьем.",
+      "price": "42000.00",
+      "brand": 6,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 22,
+    "fields": {
+      "name": "Кровать София",
+      "description": "Изысканная кровать с резными элементами.",
+      "price": "50000.00",
+      "brand": 5,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 23,
+    "fields": {
+      "name": "Кровать Венеция",
+      "description": "Кровать с ортопедическим основанием.",
+      "price": "38000.00",
+      "brand": null,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 24,
+    "fields": {
+      "name": "Кровать Берлин",
+      "description": "Современная кровать с местом для хранения.",
+      "price": "45000.00",
+      "brand": null,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 25,
+    "fields": {
+      "name": "Кровать Лондон",
+      "description": "Элегантная кровать в классическом стиле.",
+      "price": "47000.00",
+      "brand": 5,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 26,
+    "fields": {
+      "name": "Кровать Стокгольм",
+      "description": "Минималистичная кровать из массива дерева.",
+      "price": "52000.00",
+      "brand": null,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 27,
+    "fields": {
+      "name": "Кровать Амстердам",
+      "description": "Практичная кровать для молодой семьи.",
+      "price": "39000.00",
+      "brand": 6,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 28,
+    "fields": {
+      "name": "Кровать Нью-Йорк",
+      "description": "Стильная кровать с текстильной обивкой.",
+      "price": "53000.00",
+      "brand": 6,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 29,
+    "fields": {
+      "name": "Кровать Париж",
+      "description": "Мягкая кровать в пастельных тонах.",
+      "price": "47000.00",
+      "brand": null,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 30,
+    "fields": {
+      "name": "Кровать Афины",
+      "description": "Лёгкая кровать в средиземноморском стиле.",
+      "price": "44000.00",
+      "brand": 5,
+      
+      "category": 2,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 31,
+    "fields": {
+      "name": "Шкаф Милан",
+      "description": "Стильный шкаф-купе для спальни.",
+      "price": "45000.00",
+      "brand": null,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 32,
+    "fields": {
+      "name": "Шкаф Осло",
+      "description": "Лаконичный шкаф с зеркальными дверями.",
+      "price": "47000.00",
+      "brand": 8,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 33,
+    "fields": {
+      "name": "Шкаф Прага",
+      "description": "Простой и вместительный шкаф.",
+      "price": "40000.00",
+      "brand": 8,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 34,
+    "fields": {
+      "name": "Шкаф Рим",
+      "description": "Шкаф с дополнительными полками.",
+      "price": "42000.00",
+      "brand": 7,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 35,
+    "fields": {
+      "name": "Шкаф Лиссабон",
+      "description": "Компактный угловой шкаф.",
+      "price": "43000.00",
+      "brand": 7,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 36,
+    "fields": {
+      "name": "Шкаф Берлин",
+      "description": "Функциональный шкаф для прихожей.",
+      "price": "39000.00",
+      "brand": null,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 37,
+    "fields": {
+      "name": "Шкаф Париж",
+      "description": "Шкаф с раздвижными дверями.",
+      "price": "46000.00",
+      "brand": null,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 38,
+    "fields": {
+      "name": "Шкаф Афины",
+      "description": "Шкаф с отделениями для одежды и обуви.",
+      "price": "41000.00",
+      "brand": null,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 39,
+    "fields": {
+      "name": "Шкаф Хельсинки",
+      "description": "Скандинавский стиль и белый цвет.",
+      "price": "44000.00",
+      "brand": 8,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 40,
+    "fields": {
+      "name": "Шкаф Копенгаген",
+      "description": "Шкаф с внутренним освещением.",
+      "price": "49000.00",
+      "brand": 8,
+      
+      "category": 3,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 41,
+    "fields": {
+      "name": "Стол Берлин",
+      "description": "Современный обеденный стол из массива дуба.",
+      "price": "32000.00",
+      "brand": null,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 42,
+    "fields": {
+      "name": "Стол Париж",
+      "description": "Элегантный стол в классическом стиле.",
+      "price": "34000.00",
+      "brand": 10,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 43,
+    "fields": {
+      "name": "Стол Милан",
+      "description": "Кухонный стол с расширяющейся столешницей.",
+      "price": "36000.00",
+      "brand": null,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 44,
+    "fields": {
+      "name": "Стол Лондон",
+      "description": "Лаконичный офисный стол.",
+      "price": "29000.00",
+      "brand": 10,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 45,
+    "fields": {
+      "name": "Стол Токио",
+      "description": "Минималистичный стол для небольшой кухни.",
+      "price": "27000.00",
+      "brand": null,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 46,
+    "fields": {
+      "name": "Стол Осло",
+      "description": "Скандинавский стиль, светлое дерево.",
+      "price": "31000.00",
+      "brand": null,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 47,
+    "fields": {
+      "name": "Стол Прага",
+      "description": "Прямоугольный стол для гостиной.",
+      "price": "35000.00",
+      "brand": 10,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 48,
+    "fields": {
+      "name": "Стол Афины",
+      "description": "Резной стол в античном стиле.",
+      "price": "38000.00",
+      "brand": 10,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 49,
+    "fields": {
+      "name": "Стол Амстердам",
+      "description": "Компактный стол на металлическом каркасе.",
+      "price": "28000.00",
+      "brand": 10,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 50,
+    "fields": {
+      "name": "Стол Хельсинки",
+      "description": "Стол из светлого массива сосны.",
+      "price": "30000.00",
+      "brand": 9,
+      
+      "category": 4,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 51,
+    "fields": {
+      "name": "Стул Берлин",
+      "description": "Современный стул с мягким сидением.",
+      "price": "8000.00",
+      "brand": null,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 52,
+    "fields": {
+      "name": "Стул Париж",
+      "description": "Элегантный обеденный стул с высокими ножками.",
+      "price": "9000.00",
+      "brand": 2,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 53,
+    "fields": {
+      "name": "Стул Милан",
+      "description": "Стул для кухни в минималистичном стиле.",
+      "price": "8500.00",
+      "brand": 1,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 54,
+    "fields": {
+      "name": "Стул Лондон",
+      "description": "Классический офисный стул.",
+      "price": "7500.00",
+      "brand": 1,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 55,
+    "fields": {
+      "name": "Стул Токио",
+      "description": "Стул с металлическими ножками.",
+      "price": "8200.00",
+      "brand": 1,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 56,
+    "fields": {
+      "name": "Стул Осло",
+      "description": "Лёгкий деревянный стул скандинавского дизайна.",
+      "price": "8800.00",
+      "brand": null,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 57,
+    "fields": {
+      "name": "Стул Прага",
+      "description": "Мягкий стул с высокой спинкой.",
+      "price": "8700.00",
+      "brand": 2,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 58,
+    "fields": {
+      "name": "Стул Афины",
+      "description": "Стул с резными элементами декора.",
+      "price": "9100.00",
+      "brand": 2,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 59,
+    "fields": {
+      "name": "Стул Амстердам",
+      "description": "Компактный складной стул.",
+      "price": "7300.00",
+      "brand": 1,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 60,
+    "fields": {
+      "name": "Стул Хельсинки",
+      "description": "Удобный стул в натуральных оттенках.",
+      "price": "8600.00",
+      "brand": null,
+      
+      "category": 5,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 61,
+    "fields": {
+      "name": "Матрас Сириус",
+      "description": "Комфортный матрас средней жесткости для удобного сна.",
+      "price": "12000.00",
+      "brand": 3,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 62,
+    "fields": {
+      "name": "Матрас Луна",
+      "description": "Матрас с эффектом памяти, идеально подстраивается под тело.",
+      "price": "15000.00",
+      "brand": 3,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 63,
+    "fields": {
+      "name": "Матрас Вега",
+      "description": "Бюджетный матрас с оптимальной жесткостью.",
+      "price": "8000.00",
+      "brand": null,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 64,
+    "fields": {
+      "name": "Матрас Орфей",
+      "description": "Матрас с пружинным блоком для жесткости.",
+      "price": "14000.00",
+      "brand": null,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 65,
+    "fields": {
+      "name": "Матрас Антарес",
+      "description": "Матрас с натуральными наполнителями для максимального комфорта.",
+      "price": "17000.00",
+      "brand": 4,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 66,
+    "fields": {
+      "name": "Матрас Солнце",
+      "description": "Матрас с уникальной системой вентиляции.",
+      "price": "13000.00",
+      "brand": 4,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 67,
+    "fields": {
+      "name": "Матрас Полярис",
+      "description": "Матрас с разной жесткостью с каждой стороны.",
+      "price": "16000.00",
+      "brand": 4,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 68,
+    "fields": {
+      "name": "Матрас Гелиос",
+      "description": "Матрас с ортопедическим эффектом для поддержания здоровья.",
+      "price": "18000.00",
+      "brand": 4,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 69,
+    "fields": {
+      "name": "Матрас Зодиак",
+      "description": "Матрас с наполнителем из мемори-фоам.",
+      "price": "20000.00",
+      "brand": null,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  },
+  {
+    "model": "main.product",
+    "pk": 70,
+    "fields": {
+      "name": "Матрас Артемис",
+      "description": "Матрас с пружинным блоком и слоем латекса для комфортного сна.",
+      "price": "21000.00",
+      "brand": 4,
+      
+      "category": 6,
+      "image": "products/sofa_placeholder.png"
+    }
+  }
+]

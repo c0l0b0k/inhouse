@@ -1,0 +1,31 @@
+<div class="card shadow-sm border border-danger">
+    <div class="card-header bg-danger text-white d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">
+            <i class="fas fa-envelope-open-text"></i> Сообщения от клиентов
+        </h5>
+        <span class="badge badge-light text-danger font-weight-bold">
+            <span id="unread-feedback-count">{{ feedback_count|default:"0" }}</span> непрочитанных
+        </span>
+    </div>
+    <div class="card-body">
+        <p class="card-text">Перейдите к непрочитанным сообщениям клиентов, чтобы быстрее реагировать на запросы.</p>
+        <a href="{% url 'admin:main_feedback_changelist' %}" class="btn btn-outline-danger">
+            Перейти к сообщениям
+        </a>
+    </div>
+</div>
+<script>
+    setInterval(function() {
+        $.ajax({
+            url: '{% url "get_unread_feedback_count" %}',
+            type: 'GET',
+            success: function(data) {
+                console.log("Непрочитанных сообщений:", data.unread_count);
+                $('#unread-feedback-count').text(data.unread_count);
+            },
+            error: function(xhr, status, error) {
+                console.error("Ошибка при запросе:", error);
+            }
+        });
+    }, 5000);
+</script>
